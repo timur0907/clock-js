@@ -1,11 +1,4 @@
-// DOM - Document Object Model
-// document - это объект который возвращает HTML документ
 
-// console.dir(document);
-
-// .querySelector() - возвращает первый элемент в документе, который соответствует укзанному селектору. Если нету совпадений возвращает null
-
-// console.dir(document.querySelector('.s'));
 
 
 const sec = document.querySelector('.s'), /* Секундная стрелка */
@@ -31,10 +24,7 @@ function clock() {
         
         
         setTimeout(()=> clock(), 10);
-        
-        // console.log(hours.innerHTML = 'Victor');
-    // console.log(sec.style);
-    // console.log(watch, minute, seconds);
+    
     
 }
 clock();
@@ -42,22 +32,9 @@ clock();
 
 
 
-// рекурсия - это когда функция вызывает саму себя
-
-// function recurs (i = 0) {
-//     if(i < 100) {
-//         i++;
-//         console.log(i);
-//         recurs(i)
-//     }
-// }
-// recurs();
-
-
 // -----------------------Табы------------------
 const links = document.querySelectorAll('.tabsItem'),
       tabs = document.querySelectorAll('.tabsContentItem'); 
-    //   console.log(links);
 for(let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function() {
         for(let x = 0; x < links.length; x++) {
